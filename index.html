@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balcarce La Boca</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/logos/isologo-balcarce.png">
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet" />
+    <!-- iconos -->
+
     <!--css files-->
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
@@ -14,14 +17,7 @@
 <body>
     <div class="page">
         <header>
-            <h1>Instituto Balcarce</h1>
-            <h2>SEDE LA BOCA</h2>
-            <p>
-                El mejor experto también fue un día aprendiz.
-            </p>
-            <p>
-                Somos lo que hacemos repetidamente. La excelencia, entonces, no es un acto, es un hábito. Aristóteles.
-            </p>
+            <img id="logo-header" src="./resources/logos/logo-balcarce.png" alt="logo-balcarce-alt">
         </header>
         <main>
             <div class="left-section">
@@ -30,14 +26,14 @@
                     <p>
                         Monitors activity to identify project roadblocks
                     </p>
-                    <img src="images/icon-supervisor.svg" alt="supervisor" />
+                    <img src="./resources/icons/quirofano.png" alt="supervisor" />
                 </div>
                 <div class="card">
                     <h3>Aux. de Enfermeria</h3>
                     <p>
                         Uses data from past projects to provide better delivery estimates
                     </p>
-                    <img src="images/icon-calculator.svg" alt="calculator">
+                    <img src="./resources/icons/quirofano.png" alt="calculator">
                 </div>
             </div>
             <div class="middle-section">
@@ -47,21 +43,21 @@
                         Scans our talent network to create the optimal team for your
                         project
                     </p>
-                    <img src="images/icon-team-builder.svg" alt="team builder">
+                    <img src="./resources/icons/quirofano.png" alt="team builder">
                 </div>
                 <div class="card">
                     <h3>Aux. Maestra Jardinera Maternal</h3>
                     <p>
                         Regularly evaluates our talent to ensure quality
                     </p>
-                    <img src="images/icon-karma.svg" alt="karma">
+                    <img src="./resources/icons/quirofano.png" alt="karma">
                 </div>
                 <div class="card">
                     <h3>Criminalística y Criminología</h3>
                     <p>
                         data from past projects to provide better delivery estimates
                     </p>
-                    <img src="images/icon-calculator.svg" alt="calculator">
+                    <img src="./resources/icons/quirofano.png" alt="calculator">
                 </div>
             </div>
             <div class="right-section">
@@ -70,42 +66,82 @@
                     <p>
                         Uses data from past projects to provide better delivery estimates
                     </p>
-                    <img src="images/icon-calculator.svg" alt="calculator">
+                    <img src="./resources/icons/quirofano.png" alt="calculator">
                 </div>
                 <div class="card">
                     <h3>Manicuría Nail Art</h3>
                     <p>
                         Taller de Esclpidas y seminario
                     </p>
-                    <img src="images/icon-calculator.svg" alt="calculator">
+                    <img src="./resources/icons/quirofano.png" alt="calculator">
                 </div>
             </div>
         </main>
         <footer>
-            <div class="left-section">
-                <!--pendiente-->
-                <h1>Instituto Balcarce</h1>
-                <h2>SEDE LA BOCA</h2>
-            </div>
-            <div class="middle-section">
-                <h1>Contacto</h1>
-                <h2>REDES</h2>
-                <div class="redes">
-                    <!--pendiente-->
-                    <div class="icons"></div>
-                    <div class="icons"></div>
-                    <div class="icons"></div>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div id="logo-section">
+                        <img id="logo-balcarce" src="./resources/logos/logo-balcarce.png" alt="logo-balcarce-alt">
+                    </div>
+                    </br>
+                    <div id="section-wsp">
+                        <a href="#"><img id="icon-whatsapp" src="./resources/icons/whatsapp.png" alt="whatsapp"></a>
+                        <p>+54 9 11 3628-7501</p>
+                    </div>
+                    <div id="section-mail">
+                        <img id="icon-gmail" src="./resources/icons/gmail.png" alt="gmail">
+                        <p>balcarcelaboca@gmail.com</p>
+                    </div>
                 </div>
-            </div>
-            <div class="rigth-section">
-                <!--pendiente-->
-                <h1>Dirección</h1>
-                <p>Olivarria 550 entre asdasd y asdasd</p>
-                <div class="map">
+                <div class="footer-middle">
+                    <div class="contact-us-section">
+                        <h1>CONTACTANOS</h1>
+                        <a href="#"><img id="icon-facebook" src="./resources/icons/facebook.png" alt="facebook"></a>
+                        <a href="#"><img id="icon-instagram" src="./resources/icons/instagram.png" alt="instagram"></a>
+                    </div>
+                    <form action="index.html" method="post">
+                        <input type="email" name="email" class="text-input contact-input"
+                            placeholder="Tu correo electronico...">
+                        <textarea name="message" class="text-input contact-input"
+                            placeholder="Tu mensaje..."></textarea>
+                        <button type="submit" class="btn btn-big">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+                <!-- AHORA -->
+                <!-- AHORA -->
+                <!-- AHORA -->
+                <!-- AHORA -->
+                <div class="footer-right">
 
                 </div>
             </div>
+            <div class="footer-bottom">
+                &copy; mywebsite.com | Desarrollado por Lautaro Gavotti
+            </div>
         </footer>
+
+        <!-- javascrip -->
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js">
+        </script>
+        <!-- Social Media Widget -->
+        <script type="text/javascript">
+            (function () {
+                var options = {
+                    facebook: "543171959370708", // Facebook page ID
+                    whatsapp: "+54 9 11 3628-7501", // WhatsApp number
+                    call_to_action: "Envianos un mensaje!", // Call to action
+                    button_color: "#129BF4", // Color of button
+                    position: "right", // Position may be 'right' or 'left'
+                    order: "facebook,whatsapp", // Order of buttons
+                };
+                var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            })();
+        </script>
     </div>
 </body>
 
