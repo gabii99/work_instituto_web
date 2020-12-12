@@ -366,7 +366,7 @@ footer .footer-content .footer-left{
 footer .footer-content .footer-middle{
     flex: 1;
     /* border: 1px solid #343a40; */
-    padding: 35px;
+    padding: 10px 35px;
     justify-content: center;
     text-align: center;
 }
@@ -381,21 +381,10 @@ footer .footer-content .footer-middle{
     footer .footer-content .footer-middle p{
         font-size: 1em;
     }
-    /* footer .footer-content .footer-middle #icon-facebook:hover{
-        color: hsl(0, 0%, 98%);
-        transition: all 3s;
-    }
-    footer .footer-content .footer-middle #icon-instagram:hover{
-        color: hsl(0, 0%, 98%);
-        transition: all 3s;
-    } */
     footer .footer-content .footer-middle form{
         display: flex;
         flex-direction: column;
     }
-    /* .text-input{
-        color: ;
-    } */
     footer .footer-content .footer-middle form .contact-input{
         background: #272727;
         color: #bebdbd;
@@ -463,17 +452,47 @@ footer .footer-content .footer-middle{
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 15px;
+    /* height: 50px; */
 }
-    #icon-facebook{
-        max-width: 38px;
-        margin-right: 12px;
-        /* margin: 0 10px 0 55px; */
+    .social-icons ul{
+        display: flex;
+        /* border: 1px solid red; */
     }
-    #icon-instagram{
-        max-width: 38px;
-        margin-left: 12px;
+    .social-icons ul li{
+        /* border: 1px solid red; */
+        list-style: none;
+        margin: 0 10px;
+    }
+    .social-icons ul li .fab{
+        font-size: 30px;
+        line-height: 60px;
+        transition: .6s;
+        color: #000;
+    }
+    .social-icons ul li .fab:hover{
+        color: #fff;
+    }
+    .social-icons ul li a{
+        /* border: 1px solid red; */
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background: lightgray;
+        text-align: center;
+        transition: .6s;
+        box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+    }
+    .social-icons ul li a:hover{
+        transform: translate(0, -5px);
+    }
+    .social-icons ul li:nth-child(1) a:hover{
+        background-color: #3b5999;
+    }
+    .social-icons ul li:nth-child(2) a:hover{
+        background-color: #e4405f;
     }
     
 footer .footer-content .footer-right{
