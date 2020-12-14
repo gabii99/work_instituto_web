@@ -60,6 +60,7 @@ header {
     background: var(--orange-transparent);
     /* border: 1px solid red; */
     z-index: 999;
+    padding: 2px 30px;
 }
 .inner-header {
     max-width: 1440px;
@@ -81,6 +82,11 @@ header {
     cursor: pointer;
     position: relative;
     z-index: 1500;
+}
+.nav-item:hover {
+    color: #fff;
+    /* font-weight: bold; */
+    transition: .3s;
 }
 .hamburguer-menu .fa-bars{
     display: none;
@@ -278,11 +284,16 @@ main {
             /* color: #343a40; */
             line-height: 1.7em;
         }
-        .left-courses .course-card:nth-child(4){
+        .left-courses .course-card:nth-child(5){
             margin-bottom: 0;
         }
-        .right-courses .course-card:nth-child(4){
+        .right-courses .course-card:nth-child(5){
             margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5rem;
+            /* font-weight: 200; */
         }
 
 
