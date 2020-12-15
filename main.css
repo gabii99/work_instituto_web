@@ -56,32 +56,41 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 11rem;
+    height: 8rem;
     background: var(--orange-transparent);
     /* border: 1px solid red; */
     z-index: 999;
-    padding: 2px 30px;
+    padding: 10px 50px;
 }
 .inner-header {
     max-width: 1440px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    /* padding: 10px; */
+    /* border: 1px solid red; */
 }
 .nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
+    /* border: 1px solid red; */
 }
 .logo img {
-    max-width: 60%;
+    /* max-width: 60%; */
+    height: 70px;
 }
 .hamburguer-menu {
     font-size: 2.6rem;
     cursor: pointer;
     position: relative;
     z-index: 1500;
+}
+.nav-item{
+    /* border: 1px solid red; */
+    padding: 2px;
 }
 .nav-item:hover {
     color: #fff;
@@ -97,80 +106,6 @@ header {
 .nav-list {
     display: flex;
     flex-direction: row;
-}
-@media screen and (max-width: 790px) {
-    /* hamburguer phone */
-    .nav{
-        padding: 0 40px;
-    }
-    .hamburguer-menu .fa-bars {
-        display: contents;
-    }
-    .hamburguer-menu:hover {
-        color: #fff;
-        font-weight: bold;
-        transition: .3s;
-    }
-    .nav-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 1400;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--orange-transparent);
-        line-height: 10rem;
-        letter-spacing: 1.2rem;
-        padding: 1rem;
-        text-transform: uppercase;
-        opacity: 0;
-        transform: scale(0);
-        transition: opacity .5s;
-    }
-    .menu-open .nav-list {
-        opacity: 1;
-        transform: scale(1);
-    }
-    .nav-link {
-        display: block;
-        font-size: 3rem;
-    }
-    .nav-item:hover {
-        color: #fff;
-        font-weight: bold;
-        transition: .3s;
-    }
-    .menu-open .hamburguer-menu .fa-times {
-        display: block;
-    }
-    .menu-open .hamburguer-menu .fa-bars {
-        display: none;
-    }
-    /*section-landing*/
-    #cont-landing {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* border: 1px solid red; */
-    }
-    #cont-landing h1 {
-        font-size: 6rem;
-    }
-    #cont-landing p {
-        font-size: 3rem;
-    }
-    /* section-courses */
-    #cont-courses {
-        display: flex;
-        flex-direction: column;
-        /* border: 1px solid red; */
-    }
-
 }
 .nav-item {
     margin-left: 20px;
@@ -226,7 +161,7 @@ main {
     font-size: 4.5rem;
     letter-spacing: .5rem;
     line-height: 10rem;
-    margin-top: 100px;
+    margin-top: 50px;
     /* border: 1px solid red; */
 }
     #btn-landing{
@@ -240,8 +175,6 @@ main {
 /* COURSES */
 #cont-courses {
     display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
     /* border: 1px solid red; */
     /* padding: 100px; */
 }
@@ -249,13 +182,14 @@ main {
 .left-courses{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
+    align-items: flex-end;
     /* flex: 1; */
     width: 100%;
     height: 100%;
     /* border: 1px solid red; */
     /* margin-right: 10px; */
-    padding: 20px;
+    padding: 20px 10px 0 20px;
 }
 .right-courses{
     display: flex;
@@ -266,7 +200,7 @@ main {
     height: 100%;
     /* border: 1px solid red; */
     /* margin-left: 10px; */
-    padding: 20px;
+    padding: 20px 20px 0 10px;
 }
     .course-card{
         display: flex;
@@ -275,7 +209,7 @@ main {
         height: 300px;
         /* border: 1px solid red; */
         padding: 20px;
-        margin: 0 auto;
+        margin: 0;
         margin-bottom: 20px;
         border-radius: 10px;
         background: #f7f2ea;
@@ -591,4 +525,138 @@ footer .footer-bottom{
     bottom: 0px; /*?*/
     left: 0px;  /*?*/
     padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* PHONE */
+
+@media screen and (max-width: 790px) {
+    /* hamburguer phone */
+    header{
+        padding: 45px 0;
+        /* border-bottom: 1px solid var(--dark-color); */
+        /* border: 1px solid red; */
+    }
+    .nav{
+        padding: 0 40px;
+    }
+    .hamburguer-menu .fa-bars {
+        display: contents;
+    }
+    .hamburguer-menu:hover {
+        color: #fff;
+        font-weight: bold;
+        transition: .3s;
+    }
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1400;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(239, 208, 182, 1);
+        line-height: 10rem;
+        letter-spacing: 1.2rem;
+        padding: 1rem;
+        text-transform: uppercase;
+        opacity: 0;
+        transform: scale(0);
+        transition: opacity .5s;
+    }
+    .menu-open .nav-list {
+        opacity: 1;
+        transform: scale(1);
+    }
+    .nav-link {
+        display: block;
+        font-size: 3rem;
+    }
+    .nav-item:hover {
+        color: #fff;
+        font-weight: bold;
+        transition: .3s;
+    }
+    .menu-open .hamburguer-menu .fa-times {
+        display: block;
+    }
+    .menu-open .hamburguer-menu .fa-bars {
+        display: none;
+    }
+
+    /*section-landing*/
+    #cont-landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    #cont-landing h1 {
+        font-size: 4.5rem;
+    }
+    #cont-landing p {
+        font-size: 2.5rem;
+    }
+    /* section-courses */
+    #cont-courses {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    .left-courses{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        padding: 10px 0;
+        /* border: 1px solid red; */
+    }
+    .right-courses{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        /* border: 1px solid red; */
+    }
+    .course-card{
+        /* border: 1px solid red; */
+    }
+    .photo-container{
+        /* border: 1px solid red; */
+    }
+    #photo{
+        /* border: 1px solid red; */
+        /* width: 200px; */
+        height: 100%;
+        margin: 0;
+    }
+    .card-text{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        padding: 20px;
+        /* border: 1px solid red; */
+    }
+    /* section-contact */
+    #cont-contact, #cont-contact-form {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
 }
