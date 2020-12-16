@@ -49,7 +49,7 @@ ul {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* HEADER */
@@ -131,7 +131,7 @@ header {
     height: 100%;
     margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
@@ -145,7 +145,7 @@ header {
     /* padding: 100px 0; */
     /* border: 1px solid red; */
 }
-.ineer-main-landing{
+.inner-landing{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,17 +154,25 @@ header {
     width: 100%;
     height: 100%;
     padding: 100px 0;
-    font-size: 4.5rem;
+    font-size: 3rem;
     letter-spacing: .5rem;
     line-height: 10rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
+    #cont-landing h1{
+        text-align: center;
+    }
     #btn-landing{
         color: #111;
-        width: 300px;
+        width: 270px;
         height: 50px;
         margin-top: 20px;
         font-weight: bold;
+    }
+    #btn-landing:hover{
+        transition: .4s;
+        color: #fff;
+        background: rgb(242,110,62);
     }
 
 /* COURSES */
@@ -182,7 +190,7 @@ header {
     width: 100%;
     height: 100%;
     padding: 0 20px 20px 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .left-courses{
     display: flex;
@@ -210,8 +218,8 @@ header {
     .course-card{
         display: flex;
         flex-direction: row;
-        width: 550px;
-        height: 300px;
+        width: 450px;
+        height: 100%;
         /* border: 1px solid red; */
         padding: 20px;
         margin: 0;
@@ -229,25 +237,27 @@ header {
         /* border: 1px solid red; */
     }
     #photo{
-        max-width: 250px;
+        max-width: 210px;
         /* max-height: 100px; */
         border-radius: 5px;
         border-radius: 0px 0px 40px 40px;
         box-shadow: 0 5px 10px 0 #b7a68d;
         /* border: 1px solid red; */
     }
-    .course-card p{
-        font-size: 1em;
-        font-weight: bolder;
-        /* color: #343a40; */
-        line-height: 1.7em;
-    }
     .card-text{
         display: flex;
         flex-direction: column;
         width: 100%;
+        height: 100%;
         margin-left: 10px;
+        font-size: 1.25rem;
         /* border: 1px solid red; */
+    }
+    .course-card .card-text p{
+        font-size: 1rem;
+        font-weight: bolder;
+        /* color: #343a40; */
+        line-height: 1.7em;
     }
     .left-courses .course-card:nth-child(5){
         margin-bottom: 0;
@@ -269,10 +279,10 @@ header {
     
     
     /* margin: 40px 0; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
     #cont-contact h1{
-        font-size: 5rem;
+        font-size: 4rem;
         padding: 20px;
         /* width: 1000px;    */
         text-align: center;
@@ -288,7 +298,7 @@ header {
         width: 100%;
         height: 100%;
         padding: 20px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-bottom: 20px;
     }
     .inner-contact{
@@ -303,18 +313,17 @@ header {
         background: #fff;
         box-shadow: 0 5px 10px 0 #b7a68d;
         /* border-radius: 10px; */
-        border: 1px solid red ;
+        /* border: 1px solid red ; */
     }
     #cont-contact-form{
         display: flex;
         flex-direction: row;
         justify-content: center;
         max-width: 1440px;
-        width: 100%;
+        width: 1000px;
         height: 100%;
-        padding: 20px;
-        
-        border: 1px solid red;
+        padding: 20px 0;
+        /* border: 1px solid red; */
     }
     #cont-contact-form .left-form{
         display: flex;
@@ -329,7 +338,7 @@ header {
         flex-direction: column;
         flex: .4;
         align-items: center;
-        width: 100%;
+        /* width: 100%; */
         margin-left: 10px;
         padding: 20px;
         /* border: 1px solid red; */
@@ -463,11 +472,12 @@ footer .footer-content .footer-middle{
     color: #ccc;
     width: 140px;
     height: 40px;
-    /* border: 1px solid #F26836; */
     font-size: 18px;
-    border-radius: 4px;
     transition: .6s;
     overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 0 #b7a68d;
     }
     
     button:focus {
@@ -643,6 +653,12 @@ footer .footer-bottom{
     }
 
     /*section-landing*/
+    .inner-landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     #cont-landing {
         display: flex;
         flex-direction: column;
@@ -651,10 +667,16 @@ footer .footer-bottom{
         /* border: 1px solid red; */
     }
     #cont-landing h1 {
-        font-size: 4.5rem;
+        font-size: 3.2rem;
+        line-height: 7rem;
+        text-align: center;
+        margin-bottom: 10px;
+        /* border: 1px solid red; */
     }
     #cont-landing p {
         font-size: 2.5rem;
+        line-height: 5rem;
+        text-align: center;
     }
     /* section-courses */
     .inner-courses {
@@ -688,22 +710,29 @@ footer .footer-bottom{
         /* border: 1px solid red; */
     }
     .course-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* align-items: center; */
+        max-width: 110%;
+        height: 250px;
         /* border: 1px solid red; */
     }
     .photo-container{
         /* border: 1px solid red; */
     }
     #photo{
-        /* border: 1px solid red; */
-        /* width: 200px; */
-        height: 100%;
+        width: 200px;
+        /* height: 200px; */
         margin: 0;
+        /* border: 1px solid red; */
     }
     .card-text{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         /* align-items: center; */
+        font-size: 1.25rem;
         /* border: 1px solid red; */
     }
     /* section-contact */
@@ -714,10 +743,14 @@ footer .footer-bottom{
         align-items: center;
         /* border: 1px solid red; */
     }
+    #cont-contact-text h1{
+        font-size: 3rem;
+        /* border: 1px solid red; */
+    }
     #cont-contact-form .left-form{
         display: flex;
         flex-direction: column;
-        width: 600px;
+        width: 450px;
         margin-right: 0;
         padding: 20px;
         /* border: 1px solid red; */
@@ -725,7 +758,7 @@ footer .footer-bottom{
     #cont-contact-form .right-form{
         display: flex;
         flex-direction: column;
-        width: 600px;
+        width: 450px;
         margin-left: 0;
         padding: 20px;
         /* border: 1px solid red; */
