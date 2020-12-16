@@ -176,7 +176,7 @@ header {
     /* border: 1px solid red; */
     /* padding: 100px; */
 }
-.inner-main-courses{
+.inner-courses{
     display: flex;
     max-width: 1440px;
     width: 100%;
@@ -657,6 +657,12 @@ footer .footer-bottom{
         font-size: 2.5rem;
     }
     /* section-courses */
+    .inner-courses {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     #cont-courses {
         display: flex;
         flex-direction: column;
