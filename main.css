@@ -41,10 +41,15 @@ ul {
 
 /*el container de header y el main*/
 .page {
-    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* max-width: 1440px; */
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    border: 1px solid red;
 }
 
 /* HEADER */
@@ -58,17 +63,17 @@ header {
     width: 100%;
     height: 8rem;
     background: var(--orange-transparent);
-    /* border: 1px solid red; */
     z-index: 999;
-    padding: 10px 50px;
+    padding: 2px 0;
+    border: 1px solid red;
 }
 .inner-header {
     max-width: 1440px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    /* padding: 10px; */
-    /* border: 1px solid red; */
+    padding: 0 20px;
+    border: 1px solid red;
 }
 .nav {
     display: flex;
@@ -76,7 +81,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 .logo img {
     /* max-width: 60%; */
@@ -124,8 +129,9 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 1540px;
     /* padding: 5%; */
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
     .inner-main{
         width: 1440px;
@@ -135,19 +141,17 @@ main {
         justify-content: center;
         align-items: center;
         padding: 20px 20px 0 20px;
-        /* border: 1px solid red; */
-        background: #f7ece3;
-        margin: 10px 0;
+        border: 1px solid red;
+        /* margin: 10px 0; */
     }
 .container{
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
-    /* border: 1px solid red; */
     margin-bottom: 20px;
     padding: 20px;
-    /* background: lightgray; */
+    border: 1px solid red;
 }
 
 
@@ -205,7 +209,7 @@ main {
     .course-card{
         display: flex;
         flex-direction: row;
-        width: 500px;
+        width: 550px;
         height: 300px;
         /* border: 1px solid red; */
         padding: 20px;
@@ -220,6 +224,8 @@ main {
         /* justify-content: center; */
         align-items: center;
         height: 100%;
+        margin-right: 10px;
+        /* border: 1px solid red; */
     }
     #photo{
         max-width: 250px;
@@ -227,7 +233,7 @@ main {
         border-radius: 5px;
         border-radius: 0px 0px 40px 40px;
         box-shadow: 0 5px 10px 0 #b7a68d;
-        margin-right: 20px;
+        /* border: 1px solid red; */
     }
     .course-card p{
         font-size: 1em;
@@ -238,6 +244,8 @@ main {
     .card-text{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin-left: 10px;
         /* border: 1px solid red; */
     }
     .left-courses .course-card:nth-child(5){
@@ -253,12 +261,22 @@ main {
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    padding: 20px;
-    height: 500px;
+    /* padding: 20px; */
+    /* height: 500px; */
     /* border: 1px solid red; */
 }
     #cont-contact h1{
         font-size: 5rem;
+    }
+    #cont-contact-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        border: 1px solid red;
+        margin-bottom: 20px;
     }
     #cont-contact-form{
         display: flex;
@@ -267,25 +285,23 @@ main {
         width: 100%;
         height: 100%;
         padding: 20px;
-        /* border: 1px solid red; */
+        border: 1px solid red;
     }
     #cont-contact-form .left-form{
         display: flex;
         flex-direction: column;
-        flex: 1;
-        /* align-items: center; */
-        width: 100%;
-        /* margin-right: 10px; */
+        flex: .4;
+        margin-right: 10px;
         padding: 20px;
         border: 1px solid red;
     }
     #cont-contact-form .right-form{
         display: flex;
         flex-direction: column;
-        flex: 1;
+        flex: .4;
         align-items: center;
         width: 100%;
-        /* margin-left: 10px; */
+        margin-left: 10px;
         padding: 20px;
         border: 1px solid red;
     }
@@ -649,14 +665,32 @@ footer .footer-bottom{
     .card-text{
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
-        padding: 20px;
+        justify-content: center;
+        /* align-items: center; */
         /* border: 1px solid red; */
     }
     /* section-contact */
     #cont-contact, #cont-contact-form {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         /* border: 1px solid red; */
+    }
+    #cont-contact-form .left-form{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        margin-right: 0;
+        padding: 20px;
+        border: 1px solid red;
+    }
+    #cont-contact-form .right-form{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        margin-left: 0;
+        padding: 20px;
+        border: 1px solid red;
     }
 }
