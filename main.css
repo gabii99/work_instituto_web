@@ -35,7 +35,6 @@ html{
 body {
     font: 15px 'Poppins', sans-serif;
     font-size: 1.6rem;
-    color: var(--dark-fonts);
 }
 a {
     text-decoration: none;
@@ -55,7 +54,7 @@ ul {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    background: var(--dark-fonts);
+    background: #f4e1c6;
     /* border: 1px solid red; */
 }
 .title-divider{
@@ -87,7 +86,8 @@ header {
     height: 8.4rem;
     z-index: 999;
     padding: 10px 0;
-    background: var(--orange-transparent);
+    background: var(--transparent);
+    border-bottom: 1px solid var(--orange);
     /* border: 1px solid red; */
 }
 .inner-header {
@@ -166,8 +166,8 @@ header {
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    /* margin-top: 70px; */
-    padding-bottom: 0 0 50px 0;
+    height: 850px;
+    padding: 5px;
     /* border: 1px solid red; */
 }
 .inner-landing{
@@ -178,26 +178,35 @@ header {
     max-width: 1440px;
     width: 100%;
     height: 100%;
-    padding: 100px 0;
-    letter-spacing: .5rem;
-    line-height: 10rem;
     /* border: 1px solid red; */
 }
+    .landing-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 200px;
+        /* border: 1px solid red; */
+    }
     #cont-landing h1{
         text-align: center;
-        margin-top: 70px;
+        /* margin-top: 70px; */
         line-height: 8rem;
         font-size: 5rem;
         font-weight: bolder;
+        letter-spacing: .5rem;
         color: var(--white);
+        /* border: 1px solid red; */
     }
     #cont-landing p{
-        margin-top: 30px;
+        margin-top: 20px;
         text-align: center;
         line-height: 4rem;
         font-size: 2rem;
         font-weight: bolder;
+        letter-spacing: .2rem;
         color: var(--white);
+        /* border: 1px solid red; */
     }
     #btn-landing{
         color: #111;
@@ -595,7 +604,11 @@ footer .footer-bottom{
 @media screen and (max-width: 790px) {
     /* hamburguer phone */
     header{
-        padding: 45px 0;
+        padding: 30px 0;
+        /* border: 1px solid red; */
+    }
+    .inner-header{
+        padding: 0;
         /* border: 1px solid red; */
     }
     .nav{
@@ -661,18 +674,20 @@ footer .footer-bottom{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 800px;
         /* border: 1px solid red; */
     }
     #cont-landing h1 {
-        font-size: 3.2rem;
-        line-height: 7rem;
+        font-size: 3.1rem;
+        line-height: 6rem;
         text-align: center;
         margin-bottom: 10px;
         /* border: 1px solid red; */
     }
     #cont-landing p {
-        font-size: 2.5rem;
-        line-height: 5rem;
+        margin: 10px;
+        font-size: 2rem;
+        line-height: 3rem;
         text-align: center;
     }
     /* section-courses */
